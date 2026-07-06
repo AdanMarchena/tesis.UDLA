@@ -1,0 +1,24 @@
+.vscode/
+venv-tesis/
+datos/
+administrativo/
+bibliografía/
+entrega1/
+figuras/
+tesis/
+.agents/
+
+experimentos/00_datos_limpios/
+experimentos/datos_discretizados/
+
+# Resultados: ignorar todo excepto resumen y experimento final
+experimentos/resultados/*
+!experimentos/resultados/resumen_experimentos.csv
+!experimentos/resultados/resumen_experimentos.parquet
+!experimentos/resultados/experimento_final/
+!experimentos/resultados/experimento_final/**
+
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+*.docx
