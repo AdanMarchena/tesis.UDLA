@@ -1,0 +1,6 @@
+K,error_rel,error_fro,convergio,iteraciones_reales,tiempo_segundos,ruta_experimento
+3,0.1436387105981005,19.432649120687643,True,37,1.0120390000083717,resultados\experimentos\AA_C532DA2030_rrlyrae_percentiles_50_K3
+4,0.1353159982420705,18.30668281067482,True,80,2.476201099998434,resultados\experimentos\AA_992965CD69_rrlyrae_percentiles_50_K4
+6,0.1283000093817465,17.357501011495316,True,66,2.572222499991767,resultados\experimentos\AA_2BE5F899AA_rrlyrae_percentiles_50_K6
+8,0.1231280420842087,16.657793910685037,True,48,2.0530731000035303,resultados\experimentos\AA_4694C3F4EC_rrlyrae_percentiles_50_K8
+10,0.1192003216094845,16.12641895255822,True,87,3.006652700001723,resultados\experimentos\AA_13B6159A6E_rrlyrae_percentiles_50_K10

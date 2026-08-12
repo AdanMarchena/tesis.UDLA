@@ -1,0 +1,13 @@
+{
+    "modelo": "AA",
+    "dataset": "rrlyrae",
+    "discretizacion": "percentiles",
+    "normalizacion": "minmax",
+    "inicializacion": "random",
+    "optimizacion": "nnls",
+    "n_puntos": 100,
+    "n_muestras": 1000,
+    "K": 3,
+    "max_iter": 100,
+    "seed": 42
+}

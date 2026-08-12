@@ -1,0 +1,14 @@
+{
+    "modelo": "KMEANS",
+    "dataset": "rrlyrae",
+    "discretizacion": "percentiles",
+    "n_puntos": 50,
+    "n_muestras": null,
+    "normalizacion": "minmax",
+    "suavizado": "none",
+    "inicializacion": "kmeans++",
+    "optimizacion": "kmeans",
+    "K": 6,
+    "max_iter": 300,
+    "seed": 42
+}

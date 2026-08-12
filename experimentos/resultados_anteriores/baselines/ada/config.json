@@ -1,0 +1,14 @@
+{
+    "modelo": "ADA",
+    "dataset": "rrlyrae",
+    "discretizacion": "percentiles",
+    "n_puntos": 50,
+    "n_muestras": null,
+    "normalizacion": "minmax",
+    "suavizado": "none",
+    "inicializacion": "kmeans++_nearest_observation",
+    "optimizacion": "ada_nnls_simplex",
+    "K": 6,
+    "max_iter": null,
+    "seed": 42
+}

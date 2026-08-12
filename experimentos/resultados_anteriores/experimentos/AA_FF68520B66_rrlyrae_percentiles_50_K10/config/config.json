@@ -1,0 +1,14 @@
+{
+    "modelo": "AA",
+    "dataset": "rrlyrae",
+    "discretizacion": "percentiles",
+    "normalizacion": "zscore",
+    "inicializacion": "random",
+    "optimizacion": "robust_pgd",
+    "suavizado": "savgol",
+    "n_puntos": 50,
+    "n_muestras": 1000,
+    "K": 10,
+    "max_iter": 100,
+    "seed": 42
+}

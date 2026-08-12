@@ -1,0 +1,7 @@
+{
+    "error_fro_train": 15.454400826434746,
+    "error_rel_train": 0.12756880099369985,
+    "error_fro_test": 7.8687130335698035,
+    "error_rel_test": 0.13066180950457099,
+    "gap_generalizacion": 0.0030930085108711314
+}

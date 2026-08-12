@@ -80,7 +80,7 @@ def plot_centroides_duplicados(centroides, carpeta_figuras):
     return ruta
 
 
-def plot_reconstrucciones_kmeans(X, X_hat, ids, carpeta_figuras, indices=None):
+def plot_aproximaciones_baseline(X, X_hat, ids, carpeta_figuras, indices=None):
     carpeta = Path(carpeta_figuras) / "reconstrucciones"
     carpeta.mkdir(parents=True, exist_ok=True)
     indices = [0, 1, 2] if indices is None else indices
@@ -97,13 +97,13 @@ def plot_reconstrucciones_kmeans(X, X_hat, ids, carpeta_figuras, indices=None):
         ax.plot(
             fase,
             _curva_duplicada(X_hat[indice]),
-            label="Centroide asignado",
+            label="Aproximacion",
             linewidth=2,
             linestyle="--",
         )
         ax.set_xlabel("Fase")
         ax.set_ylabel("Magnitud normalizada")
-        ax.set_title(f"Reconstruccion {indice:03d} | {ids[indice]}")
+        ax.set_title(f"Aproximacion {indice:03d} | {ids[indice]}")
         ax.invert_yaxis()
         ax.legend()
         fig.tight_layout()
@@ -112,6 +112,10 @@ def plot_reconstrucciones_kmeans(X, X_hat, ids, carpeta_figuras, indices=None):
         rutas.append(ruta)
 
     return rutas
+
+
+def plot_reconstrucciones_kmeans(X, X_hat, ids, carpeta_figuras, indices=None):
+    return plot_aproximaciones_baseline(X, X_hat, ids, carpeta_figuras, indices=indices)
 
 
 def plot_pca_labels(X, labels, carpeta_figuras):
