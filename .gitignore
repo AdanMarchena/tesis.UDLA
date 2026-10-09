@@ -1,0 +1,54 @@
+# Entorno virtual de Python
+/venv-tesis2/
+
+# Archivos temporales de Python
+__pycache__/
+*.py[cod]
+
+# Archivos temporales de Jupyter
+.ipynb_checkpoints/
+
+# Datos del proyecto
+/data/*
+!/data/README.md
+
+# Otras carpetas
+/archive/
+/reports/
+
+# Experimentos y artefactos pesados
+/resultados/
+
+# Arreglos, modelos y datasets generados
+*.npy
+*.npz
+*.parquet
+*.pkl
+*.pickle
+*.joblib
+*.csv
+
+# Variables locales y credenciales
+.env
+.env.*
+*.secret
+
+# Configuración local del editor
+.vscode/
+
+# Archivos temporales del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos auxiliares generados por LaTeX
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
