@@ -4,12 +4,10 @@ from experimento_aa import (
 
 
 DATASET_FINAL = "medianas_fase_50"
-NORMALIZACION_FINAL = "minmax"
+NORMALIZACION_FINAL = "zscore"
+INICIALIZACION_FINAL = "uniform"
 K_FINAL = 5
-
-INICIALIZACION_FINAL = (
-    "pca_convex_hull_furthest_sum"
-)
+MAX_ITER_FINAL = 600
 
 SEMILLAS = (
     0,
@@ -39,6 +37,9 @@ def build_aa_grid():
                 "seed": seed,
                 "inicializacion": (
                     INICIALIZACION_FINAL
+                ),
+                "max_iter": (
+                    MAX_ITER_FINAL,
                 ),
             }
         )

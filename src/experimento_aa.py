@@ -44,6 +44,7 @@ def build_aa_config(
     k,
     seed,
     inicializacion,
+    max_iter=AA_MAX_ITER,
 ):
     """
     Construir la configuración completa
@@ -65,7 +66,7 @@ def build_aa_config(
         "K": int(k),
         "seed_modelo": int(seed),
         "n_init": AA_N_INIT,
-        "max_iter": AA_MAX_ITER,
+        "max_iter": int(max_iter),
         "tol": AA_TOL,
         "optimizador": AA_OPTIMIZER,
         "nnls_max_iter_optimizer": (
@@ -251,6 +252,7 @@ def train_aa_and_reconstruct(
     k,
     seed,
     inicializacion,
+    max_iter=AA_MAX_ITER,
 ):
     """
     Ajustar AA sobre las variables
@@ -272,7 +274,7 @@ def train_aa_and_reconstruct(
         seed=seed,
         inicializacion=inicializacion,
         n_init=AA_N_INIT,
-        max_iter=AA_MAX_ITER,
+        max_iter=max_iter,
         tol=AA_TOL,
         method=AA_OPTIMIZER,
         method_params=method_params,
@@ -492,6 +494,7 @@ def run_aa_experiment(
     k,
     seed,
     inicializacion,
+    max_iter=AA_MAX_ITER,
 ):
     """
     Ejecutar y guardar una configuración
@@ -506,6 +509,7 @@ def run_aa_experiment(
         k=k,
         seed=seed,
         inicializacion=inicializacion,
+        max_iter=max_iter,
     )
 
     experiment_id = (
@@ -544,6 +548,7 @@ def run_aa_experiment(
             k=k,
             seed=seed,
             inicializacion=inicializacion,
+            max_iter=max_iter,
         )
     )
 
